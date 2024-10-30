@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--Stone-100);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    align-self: flex-start;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--Rose-50);
+}
+
+h3{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    color: var(--Rose-800);
+    align-self: flex-start;
+    padding: 0px 25px;
+}
+
+h2{
+    align-self: flex-start;
+     font-family: "Outfit", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--Rose-800)
+}
+
+ul{
+    list-style: disc;
+    align-self: flex-start;
+    padding: 0px 50px ;
+}
+
+li{
+    font-family: "Outfit", serif;
+    line-height: 200%;
+    color: var(--Stone-600);
+}
+
+p{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    color: var(--Stone-600);
+    align-self: flex-start;
+}
+
+hr{
+    color: var(--Rose-50);
+    width: 100%;
+}
+
+.instructions{
+    list-style-type: decimal;
+}
+
+.instructions> li::marker{
+    color: var(--Rose-800);
+}
+
+table{
+    width: 100%;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Stone-900);
+}
+th,td{
+    text-align: left;
+    border-bottom: 1px solid var(--Rose-50);
+}
+.nutrient-value{
+    font-weight: 900;
+    color: var(--Brown-800);
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper{
+        padding: 0;
+        margin: 0;
+    }
+}
